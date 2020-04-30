@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#06374f, #22869a);
+  color: #c7dee3;
+  margin: 0px;
+}
+
+.home-icon {
+  border: none;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  height: 30px;
+  top: 20px;
+  left: 20px;
+}
+
+.header {
+  font-family: header;
+  text-align: center;
+}
+.text {
+  font-family: text;
+  text-align: center;
+}
+
+.context {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  cursor: pointer;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.191);
+  border-radius: 10px 10px 10px 10px;
+}
+.card > img {
+  height: 35vh;
+  background-color: #e1e1e1;
+  border-radius: 10px 10px 10px 10px;
+}
+.card > h2 {
+  color: #06374f;
+}
+
+.logo-icon {
+  border: none;
+  padding: 12px 16px;
+  font-size: 20px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  bottom: 10px;
+}
+
+@font-face {
+  font-family: "header";
+  src: url("./resource/fonts/BTitrBd.ttf");
+}
+
+@font-face {
+  font-family: "text";
+  src: url("./resource/fonts/BKoodkBd.ttf");
+}
