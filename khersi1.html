@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+<script>
+
+$(document).ready(function(){
+  $("#master").click(function(){
+    $("#login").slideToggle("slow");
+  });
+});
+</script>
   </head>
   <body>
       <img class="home-icon" src="./resource/image/social-media (1).svg"></img>
@@ -10,17 +22,24 @@
           <h1 class="header">سامانه جامع نظارت بر زبان آموزان</h1>
           <div class="context">
 
-            <div class="card">
+            <div class="card" id="master">
                 <img src="./resource/image/TEACHER.png"></img>
                 <h2 class="text">اساتید</h2>
-            </div>
-
-            <div class="card">
+              </div>
+              
+              <div class="card">
                 <img src="./resource/image/BRAIN.png"></img>
                 <h2 class="text">ادمین</h2>
-            </div>
-          </div>          
-        </div>
+              </div>
+            </div>          
+          </div>
+          <div id="login" style="display: none;">
+            <form class="form">  
+              <input type="text" id="username" name="username" placeholder="Username">
+              <input type="password" id="password" name="password" placeholder="Password">
+              <button type="submit" id="submit" >Login</button>
+            </form>
+          </div>
         
         <div class="footer">
             <img class="logo-icon" src="./resource/image/LOGO PIRHANI.png"></img>
